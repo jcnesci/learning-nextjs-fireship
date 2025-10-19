@@ -35,6 +35,11 @@ const posts = [
 ];
 
 export async function GET() {
+  //   example of using auth session on server side
   const session = await getServerSession();
+  if (!session) {
+    // redirect or render something else
+  }
+
   return NextResponse.json(posts);
 }
