@@ -1,3 +1,12 @@
+# learning-nextjs-fireship
+
+Result of following this NextJS tutorial from fireship:
+https://fireship.io/courses/nextjs
+
+Below is the results of running `npx create-next-app`.
+
+---------------------------------------------------------------
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
