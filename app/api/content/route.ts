@@ -39,6 +39,9 @@ export async function GET() {
   const session = await getServerSession();
   if (!session) {
     // redirect or render something else
+    console.log("Server side: Not logged in.");
+  } else {
+    console.log("Server side: logged in.");
   }
 
   return NextResponse.json(posts);
