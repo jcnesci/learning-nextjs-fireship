@@ -1,4 +1,5 @@
 // Although we use generateStaticParams() we still need to refresh data once in a while, so revalidate it every 420 secs.
+//?: using this const is technically called "ISR", don't get it yet...
 export const revalidate = 420;
 
 interface Post {
@@ -19,6 +20,8 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPage({ params }: Props) {
+  // deduped
+  //?: I don't get how Next knows that this posts var should somehow use the var or same name in generateStaticParams()...
   const posts: Post[] = await fetch("http://localhost:3000/api/content").then(
     (res) => res.json()
   );
