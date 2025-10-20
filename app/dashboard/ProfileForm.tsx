@@ -1,6 +1,6 @@
 "use client";
 
-export default function ProfileForm({ user }: any) {
+export function ProfileForm({ user }: any) {
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
     // To prevent page from refreshing
     e.preventDefault();
